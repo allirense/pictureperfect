@@ -3,40 +3,146 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Picture Perfect by allirense</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>PicturePerfect.js</title>
+    <!-- Stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Limelight|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/zenburn.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--JavaScript-->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <script src="js/picturePerfect.js"></script>
+    <script>
+      $('.picture-perfect').picturePerfect('.circle-img-container');
+    </script>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Picture Perfect</h1>
+        <h1>PicturePerfect.js</h1>
         <p>Get your images to fit in their container. Squares? Circles? No problem.</p>
-
-        <p class="view"><a href="https://github.com/allirense/pictureperfect">View the Project on GitHub <small>allirense/pictureperfect</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/allirense/pictureperfect/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/allirense/pictureperfect/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/allirense/pictureperfect">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
-      <section>
-        <h3>
-<a id="images-are-a-bitch" class="anchor" href="#images-are-a-bitch" aria-hidden="true"><span class="octicon octicon-link"></span></a>Images are a bitch.</h3>
+      <section class="buttons">
+        <button class="btn btn-project" href="https://github.com/allirense/pictureperfect/zipball/master">Download ZIP</button>
+        <button class="btn btn-project" href="https://github.com/allirense/pictureperfect/tarball/master">Download TAR Ball</button>
+        <button class="btn btn-project" href="https://github.com/allirense/pictureperfect">View On GitHub</button>
+      </section>
+      <section class="info container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p><strong>PicturePerfect.js</strong> is a jQuery plugin that detects whether or not a picture is landscape (wider than it is tall) or portrait (taller than it is wide) and then sizes it appropriately to fit circle or square containers.</p>
+            <p><strong>Why?</strong> Because circles and squares are <em>so hot right now</em> but image assets are never delivered as perfect squares.</p>
+            <h2>Say You Have a Bunch of Images</h2>
+            <p>And they're all going to need to fit into circles. You have one image to use as an example:</p>
+            <img src="images/hepburn-v.jpg" class="centered-img"/>
+            <p>I can do this with CSS, you think. This will be easy. Sure enough:</p>
+            <div class="circle-img-container">
+              <img src="images/hepburn-v.jpg" class="circle-img"/>
+            </div> 
+            <p>Great! Nothing to it. Then the client sends you a new image. Can you test this one, too?</p>
+            <img src="images/carygrant-h.jpg" class="centered-img"/>
+            <p>No problemo! The CSS is already there, so you just have to stick it in the same DOM elements, right?</p>
+            <div class="circle-img-container">
+              <img src="images/carygrant-h.jpg" class="circle-img"/>
+            </div> 
+            <p>Wait. What? Cary is cut off at the bottom! This will not do. Of course, Cary is a landscape/horizontal image, so he needs his height set to 100%. But Audrey up top is a portrait/vertical image, so she needs her width set to 100%. What if we set both the height and width to 100%?</p>
+            <div class="multiple-images">
+              <div class="circle-img-container">
+                <img src="images/hepburn-v.jpg" class="circle-img"/>
+              </div>
+              <div class="circle-img-container">
+                <img src="images/carygrant-h.jpg" class="circle-img"/>
+              </div> 
+            </div>
+            <p>Well that doesn't work, they look all distorted! We need a solution that fits any orientation of image inside its container. That's where <strong>PicturePerfect.js</strong> comes in. Simply initiate it on your container div, and your images will fit in their containers no matter what odd shape the client sends them in. So all these images:</p>
+            <div class="multiple-images">
+              <img src="images/hepburn-v.jpg" class="circle-img"/>
+              <img src="images/carygrant-h.jpg" class="circle-img"/>
+              <img src="images/gracekelly-s.jpg" class="circle-img"/>
+              <img src="images/astaire-v.jpg" class="circle-img"/>
+              <img src="images/marilyn-h.jpg" class="circle-img"/>
+            </div>
+            <p>Will look like this:</p>
+            <div class="multiple-images picture-perfect">
+              <div class="circle-img-container">
+                <img src="images/hepburn-v.jpg" class="circle-img"/>
+              </div>
+              <div class="circle-img-container">
+                <img src="images/carygrant-h.jpg" class="circle-img"/>
+              </div>
+              <div class="circle-img-container">
+                <img src="images/gracekelly-s.jpg" class="circle-img"/>
+              </div><br/>
+              <div class="circle-img-container">
+                <img src="images/astaire-v.jpg" class="circle-img"/>
+              </div>
+              <div class="circle-img-container">
+                <img src="images/marilyn-h.jpg" class="circle-img"/>
+              </div>
+            </div>
+            <p>They're even centered!</p>
+          </div>
+        </div>
+      </section>
+      <section class="get-started">
+        <h2>Get Started</h2>
+        <p>Ready to use <strong>PicturePerfect.js</strong>? Getting setup is easy!</p>
+        <h4>Step 1: Install Dependencies</h4>
+        <p>PicturePerfect.js depends on <a href="https://jquery.com/">jQuery</a> and <a href="http://imagesloaded.desandro.com/">the imagesLoaded plugin</a>. Make sure you have them loaded before PicturePerfect.js in your document.</p>
+        <h3>Step 2: Download PicturePerfect.js and Include it in your Document</h3>
+        <h3>Step 3: Get your DOM and CSS Ready</h3>
+        <p>For PicturePerfect.js to work correctly, you'll need to make sure your images are correctly placed in your DOM and you're styling them correctly.</p>
+        <p>For the DOM setup, you should have each image inside of a container:</p>
+        <pre><code class="xml hljs">
+          &lt;div class="img-container"&gt;
+            &lt;img src="images/my-image.jpg"/&gt;
+          &lt;/div&gt;
+          &lt;div class="img-container"&gt;
+            &lt;img src="images/another-image.jpg"/&gt;
+          &lt;/div&gt;
+        </code></pre>
+        <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles. The image should be initilaized to have a height and width of auto (default) and a relative position.
+        <pre><code class="css">
+            .img-container {
+              border-radius: 50%;
+              height: 200px;
+              margin: 0 auto;
+              overflow: hidden;
+              width: 200px;
+            }
+
+            .img-container img {
+              position: relative;
+            }
+        </code></pre>
+        <h3>Step 4: Call the Function on your Container</h3>
+        <p>Call the picturePerfect function on the element which contains the images you want to contain. Pass in the class of your image container as an attribute.</p>
+        <pre><code class="javascript">
+          $('.picture-perfect').picturePerfect('.my-image-container');
+        </code></pre>
+        <!--<p>Optionally, you can specify a specifc class to select your image containers. Otherwise, the default - .img-container - will be used.
+        <pre><code class="javascript">
+          $('.picture-perfect').picturePerfect('.my-container');
+        </code></pre>-->
+        <p>And you're good to go!</p>
+        <h3>Options</h3>
+        <p>Options coming soon!</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/allirense">allirense</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by Alli Rense.</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+    <!--<script src="javascripts/scale.fix.js"></script>-->
   </body>
 </html>
