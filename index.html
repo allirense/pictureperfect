@@ -95,48 +95,54 @@
         </div>
       </section>
       <section class="get-started">
-        <h2>Get Started</h2>
-        <p>Ready to use <strong>PicturePerfect.js</strong>? Getting setup is easy!</p>
-        <h4>Step 1: Install Dependencies</h4>
-        <p>PicturePerfect.js depends on <a href="https://jquery.com/">jQuery</a> and <a href="http://imagesloaded.desandro.com/">the imagesLoaded plugin</a>. Make sure you have them loaded before PicturePerfect.js in your document.</p>
-        <h3>Step 2: Download PicturePerfect.js and Include it in your Document</h3>
-        <h3>Step 3: Get your DOM and CSS Ready</h3>
-        <p>For PicturePerfect.js to work correctly, you'll need to make sure your images are correctly placed in your DOM and you're styling them correctly.</p>
-        <p>For the DOM setup, you should have each image inside of a container:</p>
-        <pre><code class="xml hljs">
-          &lt;div class="img-container"&gt;
-            &lt;img src="images/my-image.jpg"/&gt;
-          &lt;/div&gt;
-          &lt;div class="img-container"&gt;
-            &lt;img src="images/another-image.jpg"/&gt;
-          &lt;/div&gt;
-        </code></pre>
-        <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles. The image should be initilaized to have a height and width of auto (default) and a relative position.
-        <pre><code class="css">
-            .img-container {
-              border-radius: 50%;
-              height: 200px;
-              margin: 0 auto;
-              overflow: hidden;
-              width: 200px;
-            }
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>Get Started</h2>
+              <p>Ready to use <strong>PicturePerfect.js</strong>? Getting setup is easy!</p>
+              <h4>Step 1: Install Dependencies</h4>
+              <p>PicturePerfect.js depends on <a href="https://jquery.com/">jQuery</a> and <a href="http://imagesloaded.desandro.com/">the imagesLoaded plugin</a>. Make sure you have them loaded before PicturePerfect.js in your document.</p>
+              <h3>Step 2: Download PicturePerfect.js and Include it in your Document</h3>
+              <h3>Step 3: Get your DOM and CSS Ready</h3>
+              <p>For PicturePerfect.js to work correctly, you'll need to make sure your images are correctly placed in your DOM and you're styling them correctly.</p>
+              <p>For the DOM setup, you should have each image inside of a container:</p>
+              <pre><code class="xml hljs">
+                &lt;div class="img-container"&gt;
+                  &lt;img src="images/my-image.jpg"/&gt;
+                &lt;/div&gt;
+                &lt;div class="img-container"&gt;
+                  &lt;img src="images/another-image.jpg"/&gt;
+                &lt;/div&gt;
+              </code></pre>
+              <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles. The image should be initilaized to have a height and width of auto (default) and a relative position.
+              <pre><code class="css">
+                  .img-container {
+                    border-radius: 50%;
+                    height: 200px;
+                    margin: 0 auto;
+                    overflow: hidden;
+                    width: 200px;
+                  }
 
-            .img-container img {
-              position: relative;
-            }
-        </code></pre>
-        <h3>Step 4: Call the Function on your Container</h3>
-        <p>Call the picturePerfect function on the element which contains the images you want to contain. Pass in the class of your image container as an attribute.</p>
-        <pre><code class="javascript">
-          $('.picture-perfect').picturePerfect('.my-image-container');
-        </code></pre>
-        <!--<p>Optionally, you can specify a specifc class to select your image containers. Otherwise, the default - .img-container - will be used.
-        <pre><code class="javascript">
-          $('.picture-perfect').picturePerfect('.my-container');
-        </code></pre>-->
-        <p>And you're good to go!</p>
-        <h3>Options</h3>
-        <p>Options coming soon!</p>
+                  .img-container img {
+                    position: relative;
+                  }
+              </code></pre>
+              <h3>Step 4: Call the Function on your Container</h3>
+              <p>Call the picturePerfect function on the element which contains the images you want to contain. Pass in the class of your image container as an attribute.</p>
+              <pre><code class="javascript">
+                $('.picture-perfect').picturePerfect('.my-image-container');
+              </code></pre>
+              <!--<p>Optionally, you can specify a specifc class to select your image containers. Otherwise, the default - .img-container - will be used.
+              <pre><code class="javascript">
+                $('.picture-perfect').picturePerfect('.my-container');
+              </code></pre>-->
+              <p>And you're good to go!</p>
+              <h3>Options</h3>
+              <p>Options coming soon!</p>
+            </div>
+          </div>
+        </div>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/allirense">allirense</a></p>
