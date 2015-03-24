@@ -23,7 +23,10 @@
     </script>
     <script src="js/picturePerfect.js"></script>
     <script>
-      $('.picture-perfect').picturePerfect('.circle-img-container');
+      //$('.picture-perfect').picturePerfect('.circle-img-container');
+      jQuery(function ($) {
+        $('.picture-perfect').picturePerfect('.circle-img-container');
+      });
     </script>
   </head>
   <body>
@@ -33,9 +36,9 @@
         <p>Get your images to fit in their container. Squares? Circles? No problem.</p>
       </header>
       <section class="buttons">
-        <button class="btn btn-project" href="https://github.com/allirense/pictureperfect/zipball/master">Download ZIP</button>
-        <button class="btn btn-project" href="https://github.com/allirense/pictureperfect/tarball/master">Download TAR Ball</button>
-        <button class="btn btn-project" href="https://github.com/allirense/pictureperfect">View On GitHub</button>
+        <a class="btn btn-project" href="https://github.com/allirense/pictureperfect/zipball/master">Download ZIP</a>
+        <a class="btn btn-project" href="https://github.com/allirense/pictureperfect/tarball/master">Download TAR Ball</a>
+        <a class="btn btn-project" href="https://github.com/allirense/pictureperfect">View On GitHub</a>
       </section>
       <section class="info container">
         <div class="row">
@@ -64,7 +67,7 @@
                 <img src="images/carygrant-h.jpg" class="circle-img"/>
               </div> 
             </div>
-            <p>Well that doesn't work, they look all distorted! We need a solution that fits any orientation of image inside its container. That's where <strong>PicturePerfect.js</strong> comes in. Simply initiate it on your container div, and your images will fit in their containers no matter what odd shape the client sends them in. So all these images:</p>
+            <p>Well that doesn't work; they look all distorted! We need a solution that fits any orientation of image inside its container. That's where <strong>PicturePerfect.js</strong> comes in. Simply initiate it on your container div, and your images will fit in their containers no matter what odd shape the client sends them in. So all these images:</p>
             <div class="multiple-images">
               <img src="images/hepburn-v.jpg" class="circle-img"/>
               <img src="images/carygrant-h.jpg" class="circle-img"/>
@@ -114,7 +117,7 @@
                   &lt;img src="images/another-image.jpg"/&gt;
                 &lt;/div&gt;
               </code></pre>
-              <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles. The image should be initilaized to have a height and width of auto (default) and a relative position.
+              <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles. The image should be initialized to have a height and width of auto (default) and a relative position.
               <pre><code class="css">
                   .img-container {
                     border-radius: 50%;
