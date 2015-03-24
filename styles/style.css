@@ -164,7 +164,7 @@ h1 {
 	header p {
 		font-size: 1.6rem;
 	}
-	section.buttons button {
+	section.buttons .btn {
 		margin-bottom: 5px;
 		width: 100%;
 	}
