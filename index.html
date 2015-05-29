@@ -25,7 +25,9 @@
     <script>
       //$('.picture-perfect').picturePerfect('.circle-img-container');
       jQuery(function ($) {
-        $('.picture-perfect').picturePerfect('.circle-img-container');
+        $('.picture-perfect').picturePerfect({
+          selector: '.circle-img-container'
+        });
       });
     </script>
   </head>
@@ -36,6 +38,7 @@
         <p>Get your images to fit in their container. Squares? Circles? No problem.</p>
       </header>
       <section class="buttons">
+        <a class="btn btn-project" href="#">What's New</a>
         <a class="btn btn-project" href="https://github.com/allirense/pictureperfect/zipball/master">Download ZIP</a>
         <a class="btn btn-project" href="https://github.com/allirense/pictureperfect/tarball/master">Download TAR Ball</a>
         <a class="btn btn-project" href="https://github.com/allirense/pictureperfect">View On GitHub</a>
@@ -94,6 +97,8 @@
               </div>
             </div>
             <p>They're even centered!</p>
+            <h2>What about rectangles and ovals?</h2>
+            <p>Rectangles and ovals are no problem! In fact, you can have a bunch of differently sized containers all holding randomly sized images and PicturePerfect will size and center them all.</p>
           </div>
         </div>
       </section>
@@ -110,16 +115,16 @@
               <p>For PicturePerfect.js to work correctly, you'll need to make sure your images are correctly placed in your DOM and you're styling them correctly.</p>
               <p>For the DOM setup, you should have each image inside of a container:</p>
               <pre><code class="xml hljs">
-                &lt;div class="img-container"&gt;
+                &lt;div class="image-container"&gt;
                   &lt;img src="images/my-image.jpg"/&gt;
                 &lt;/div&gt;
-                &lt;div class="img-container"&gt;
+                &lt;div class="image-container"&gt;
                   &lt;img src="images/another-image.jpg"/&gt;
                 &lt;/div&gt;
               </code></pre>
-              <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles. The image should be initialized to have a height and width of auto (default) and a relative position.
+              <p>For the CSS, set the container to the specific height and width you want your images to be, set the overflow to hidden, and add a border radius if you want your images to appear as circles or ovals. The image should be initialized to have a height and width of auto (default) and a relative position.
               <pre><code class="css">
-                  .img-container {
+                  .image-container {
                     border-radius: 50%;
                     height: 200px;
                     margin: 0 auto;
@@ -127,14 +132,14 @@
                     width: 200px;
                   }
 
-                  .img-container img {
+                  .image-container img {
                     position: relative;
                   }
               </code></pre>
               <h3>Step 4: Call the Function on your Container</h3>
-              <p>Call the picturePerfect function on the element which contains the images you want to contain. Pass in the class of your image container as an attribute.</p>
+              <p>Call the picturePerfect function on the element which contains the images you want to contain.</p>
               <pre><code class="javascript">
-                $('.picture-perfect').picturePerfect('.my-image-container');
+                $('.picture-perfect').picturePerfect();
               </code></pre>
               <!--<p>Optionally, you can specify a specifc class to select your image containers. Otherwise, the default - .img-container - will be used.
               <pre><code class="javascript">
@@ -142,7 +147,15 @@
               </code></pre>-->
               <p>And you're good to go!</p>
               <h3>Options</h3>
-              <p>Options coming soon!</p>
+              <p><strong>container:</strong> <em>string</em> - set the selector (class) of your image container. (default: .image-container)<br/>
+                <strong>centered:</strong> <em>bool</em> - set if images will be centered in their containers or not. (default: true)
+              </p>
+              <pre><code class="javascript">
+                $('.picture-perfect').picturePerfect({
+                  container: '.image-container',
+                  centered: true
+                });
+              </code></pre>
             </div>
           </div>
         </div>
