@@ -1,0 +1,175 @@
+body {
+	color: #3a4141;
+	font-family: 'Merriweather', Georgia, 'Palatino Linotype', Palatino, serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.25;
+	text-align: center;
+}
+
+a {
+	color: #3f3f3f;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+code {
+	display: block;
+	margin: 15px;
+}
+
+header {
+	background-color: #edafb6;
+	padding-bottom: 40px;
+	padding-top: 120px;
+}
+
+	header p {
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
+
+section.buttons {
+	background-color: #000;
+	padding: 40px 0;
+	margin-bottom: 40px;
+}
+
+section.info {
+	font-size: 2rem;
+	line-height: 1.8;
+	text-align: left;
+}
+
+section.get-started {
+	background-color: #8f011c;
+	color: #fff;
+	font-size: 2rem;
+	line-height: 1.8;
+	padding: 40px 0;
+	margin: 40px 0 0 0;
+	text-align: left;
+}
+
+footer {
+	background-color: #edafb6;
+	padding: 40px 15px 20px 15px;
+}
+
+h1 {
+	color: #000;
+	font-family: 'Limelight', Impact, sans-serif;
+	font-size: 6.4rem;
+}
+
+.centered-img {
+	display: block;
+	margin: 0 auto 10px auto;
+}
+
+.circle-img-container {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	height: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 200px;
+}
+
+.circle-img-container .circle-img {
+	width: 100%;
+}
+
+.multiple-images {
+	text-align: center;
+}
+
+.multiple-images > img {
+	margin: 5px;
+}
+
+.multiple-images .circle-img-container {
+	display: inline-block;
+}
+
+.multiple-images .circle-img-container .circle-img {
+	height: 100%;
+	width: 100%;
+}
+
+.picture-perfect {
+	margin-top: 20px;
+}
+
+.picture-perfect .circle-img-container .circle-img {
+	height: auto;
+	position: relative;
+	width: auto;
+}
+
+.btn-project {
+	background-color: #8f011c;
+	border-color: #8f011c;
+	color: #fff;
+	font-size: 2.4rem;
+	font-weight: 300;
+	padding: 12px 24px;
+	text-decoration: none;
+}
+
+.btn-project:focus {
+	color: #fff;
+}
+
+.btn-project:hover {
+	background-color: #c20126;
+	border-color: #c20126;
+	color: #fff;
+}
+
+.get-started h2 {
+	font-size: 3.6rem;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.get-started h3 {
+	margin-top: 20px;
+}
+
+.get-started a {
+	color: #edafb6;
+	text-decoration: underline;
+}
+
+.get-started a:hover {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+	header, section.buttons {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	header {
+		padding-top: 60px;
+	}
+	header h1 {
+		font-size: 3rem;
+	}
+	header p {
+		font-size: 1.6rem;
+	}
+	section.buttons .btn {
+		margin-bottom: 5px;
+		width: 100%;
+	}
+	.centered-img, .multiple-images > img {
+		max-width: 100%;
+	}
+}
+
