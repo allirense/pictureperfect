@@ -54,25 +54,6 @@ section.get-started {
 	text-align: left;
 }
 
-.get-started h2 {
-	font-size: 3.6rem;
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.get-started h3 {
-	margin-top: 20px;
-}
-
-.get-started a {
-	color: #edafb6;
-	text-decoration: underline;
-}
-
-.get-started a:hover {
-	text-decoration: none;
-}
-
 footer {
 	background-color: #edafb6;
 	padding: 40px 15px 20px 15px;
@@ -137,6 +118,7 @@ h1 {
 	font-size: 2.4rem;
 	font-weight: 300;
 	padding: 12px 24px;
+	text-decoration: none;
 }
 
 .btn-project:focus {
@@ -147,6 +129,25 @@ h1 {
 	background-color: #c20126;
 	border-color: #c20126;
 	color: #fff;
+}
+
+.get-started h2 {
+	font-size: 3.6rem;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.get-started h3 {
+	margin-top: 20px;
+}
+
+.get-started a {
+	color: #edafb6;
+	text-decoration: underline;
+}
+
+.get-started a:hover {
+	text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -163,7 +164,7 @@ h1 {
 	header p {
 		font-size: 1.6rem;
 	}
-	section.buttons button {
+	section.buttons .btn {
 		margin-bottom: 5px;
 		width: 100%;
 	}
