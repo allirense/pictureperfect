@@ -1,5 +1,5 @@
 /*!
- * PicturePerfect.js v 1.0.0
+ * PicturePerfect.js v 1.0.1
  * Contain your images!
  * Bult by Alli Rense www.allirense.com
  * MIT License
@@ -24,8 +24,8 @@
             var h = image.naturalHeight;
             var w = image.naturalWidth;
             var imageRatio = h/w;
-            var parentWidth = thisImg.parent('div').width();
-            var parentHeight = thisImg.parent('div').height();
+            var parentWidth = thisImg.parent().width();
+            var parentHeight = thisImg.parent().height();
             var parentRatio = parentHeight/parentWidth;
             var heightDif = parentHeight - h;
             var ratioDif = parentRatio - imageRatio;

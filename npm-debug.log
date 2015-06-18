@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\atreman\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\atreman\\AppData\\Roaming\\npm-cache\\PicturePerfect\\1.0.0\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package.tgz
+13 verbose folder .
+14 info prepublish PicturePerfect@1.0.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\atreman\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile a40f6ccc-PicturePerfect-1-0-0-package-tgz tar://C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package.tgz
+18 verbose lock tar://C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package.tgz C:\Users\atreman\AppData\Roaming\npm-cache\a40f6ccc-PicturePerfect-1-0-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile a40f6ccc-PicturePerfect-1-0-0-package-tgz tar://C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package.tgz
+22 silly lockFile a40f6ccc-PicturePerfect-1-0-0-package-tgz tar://C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package.tgz
+23 silly lockFile 8ba9e597-che-PicturePerfect-1-0-0-package C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package
+24 verbose lock C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package C:\Users\atreman\AppData\Roaming\npm-cache\8ba9e597-che-PicturePerfect-1-0-0-package.lock
+25 silly lockFile 8ba9e597-che-PicturePerfect-1-0-0-package C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package
+26 silly lockFile 8ba9e597-che-PicturePerfect-1-0-0-package C:\Users\atreman\AppData\Roaming\npm-cache\PicturePerfect\1.0.0\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'PicturePerfect',
+29 silly publish   version: '1.0.0',
+29 silly publish   description: 'Get your images to fit their container. Circles? Squares? Rectangles? No Problem.',
+29 silly publish   main: 'picturePerfect.js',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'https://github.com/allirense/pictureperfect.git' },
+29 silly publish   keywords:
+29 silly publish    [ 'jquery-plugin',
+29 silly publish      'ecosystem:jquery',
+29 silly publish      'jquery',
+29 silly publish      'images',
+29 silly publish      'resizing' ],
+29 silly publish   author: { name: 'Alli Rense' },
+29 silly publish   license: 'MIT',
+29 silly publish   bugs: { url: 'https://github.com/allirense/pictureperfect/issues' },
+29 silly publish   homepage: 'http://allirense.github.io/pictureperfect',
+29 silly publish   readme: '# pictureperfect\r\nGet your images to fit in their container. Squares? Circles? Rectangles? No problem.\r\n\r\n## Version 1.0.0\r\n\r\nVersion 1.0.0 has been released!\r\n\r\nThis version is not backwards compatible with previous versions. Please see the CHANGELOG for more details.\r\n\r\nThe previous version(s) is depreciated.',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '9606aeaaaf99af1cbece9b0af045d9ec9cb052da',
+29 silly publish   _id: 'PicturePerfect@1.0.0',
+29 silly publish   _shasum: '193ae65cb4cde233f0fa627e74042f72a76055a0',
+29 silly publish   _from: '.' }
+30 verbose url raw PicturePerfect
+31 verbose url resolving [ 'https://registry.npmjs.org/', './PicturePerfect' ]
+32 verbose url resolved https://registry.npmjs.org/PicturePerfect
+33 info trying registry request attempt 1 at 16:12:35
+34 http PUT https://registry.npmjs.org/PicturePerfect
+35 http 500 https://registry.npmjs.org/PicturePerfect
+36 info retry will retry, error on last attempt: Error: unexpected status code: 400 : PicturePerfect
+37 info trying registry request attempt 2 at 16:12:46
+38 http PUT https://registry.npmjs.org/PicturePerfect
+39 http 500 https://registry.npmjs.org/PicturePerfect
+40 info retry will retry, error on last attempt: Error: unexpected status code: 400 : PicturePerfect
+41 info trying registry request attempt 3 at 16:13:47
+42 http PUT https://registry.npmjs.org/PicturePerfect
+43 http 500 https://registry.npmjs.org/PicturePerfect
+44 verbose headers { 'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=0',
+44 verbose headers   'content-length': '39',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   date: 'Fri, 29 May 2015 20:13:47 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   connection: 'keep-alive',
+44 verbose headers   'x-served-by': 'cache-ord1723-ORD',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1432930427.570200,VS0,VE270' }
+45 error publish Failed PUT 500
+46 error Error: unexpected status code: 400 : PicturePerfect
+46 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:274:14)
+46 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:65)
+46 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:123:22)
+46 error     at Request.emit (events.js:98:17)
+46 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:893:14)
+46 error     at Request.emit (events.js:117:20)
+46 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:844:12)
+46 error     at IncomingMessage.emit (events.js:117:20)
+46 error     at _stream_readable.js:929:16
+46 error     at process._tickCallback (node.js:419:13)
+47 error If you need help, you may report this *entire* log,
+47 error including the npm and node versions, at:
+47 error     <http://github.com/npm/npm/issues>
+48 error System Windows_NT 6.2.9200
+49 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+50 error cwd C:\Users\atreman\Documents\GitHub\pictureperfect
+51 error node -v v0.10.29
+52 error npm -v 1.4.14
+53 verbose exit [ 1, true ]

@@ -1,0 +1,26 @@
+{
+  "name": "PicturePerfect",
+  "version": "1.0.0",
+  "description": "Get your images to fit their container. Circles? Squares? Rectangles? No Problem.",
+  "main": "picturePerfect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allirense/pictureperfect.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "jquery",
+    "images",
+    "resizing"
+  ],
+  "author": "Alli Rense",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allirense/pictureperfect/issues"
+  },
+  "homepage": "http://allirense.github.io/pictureperfect"
+}
