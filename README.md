@@ -3,7 +3,11 @@ Get your images to fit in their container. Squares? Circles? Rectangles? No prob
 
 [Learn More!](http://allirense.github.io/pictureperfect)
 
-## Version 1.0.1
+## Version 1.0.2
+
+### 2015-06-26
+
+Version 1.0.2 released.
 
 ### 2015-06-18
 
