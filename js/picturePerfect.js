@@ -1,11 +1,11 @@
 /*!
- * PicturePerfect.js v 0.1
+ * PicturePerfect.js v 1.0.3
  * Contain your images!
  * Bult by Alli Rense www.allirense.com
  * MIT License
  */
 
-(function ($) {
+(function ($, window, document) {
   'use strict';
   $.fn.picturePerfect = function(options) {
     // Options!
@@ -88,13 +88,15 @@
             var heightOffset = (parentHeight - newHeight)/2;
             var widthOffset = (parentWidth - newWidth)/2
             if (settings.centered) {
+              console.log('auto: ' + auto);
               if (auto === 'height') {
-                thisImg.css('top',heightOffset + 'px');
+                thisImg.css('margin-top',heightOffset + 'px');
               } else if (auto === 'width') {
-                thisImg.css('left',widthOffset + 'px');
+                console.log('width offset: ' + widthOffset);
+                thisImg.css('margin-left',widthOffset + 'px');
               } else {
-                thisImg.css('top',heightOffset + 'px');
-                thisImg.css('left',widthOffset + 'px');
+                thisImg.css('margin-top',heightOffset + 'px');
+                thisImg.css('margin-left',widthOffset + 'px');
               }
             }
         });
