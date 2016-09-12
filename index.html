@@ -55,13 +55,13 @@
             <p>I can do this with CSS, you think. This will be easy. Sure enough:</p>
             <div class="circle-img-container">
               <img src="images/hepburn-v.jpg" class="circle-img"/>
-            </div> 
+            </div>
             <p>Great! Nothing to it. Then the client sends you a new image. Can you test this one, too?</p>
             <img src="images/carygrant-h.jpg" class="centered-img"/>
             <p>No problemo! The CSS is already there, so you just have to stick it in the same DOM elements, right?</p>
             <div class="circle-img-container">
               <img src="images/carygrant-h.jpg" class="circle-img"/>
-            </div> 
+            </div>
             <p>Wait. What? Cary is cut off at the bottom! This will not do. Of course, Cary is a landscape/horizontal image, so he needs his height set to 100%. But Audrey up top is a portrait/vertical image, so she needs her width set to 100%. What if we set both the height and width to 100%?</p>
             <div class="multiple-images">
               <div class="circle-img-container">
@@ -69,7 +69,7 @@
               </div>
               <div class="circle-img-container">
                 <img src="images/carygrant-h.jpg" class="circle-img"/>
-              </div> 
+              </div>
             </div>
             <p>Well that doesn't work; they look all distorted! We need a solution that fits any orientation of image inside its container. That's where <strong>PicturePerfect.js</strong> comes in. Simply initiate it on your container div, and your images will fit in their containers no matter what odd shape the client sends them in. So all these images:</p>
             <div class="multiple-images">
@@ -148,12 +148,12 @@
               </code></pre>-->
               <p>And you're good to go!</p>
               <h3>Options</h3>
-              <p><strong>container:</strong> <em>string</em> - set the selector (class) of your image container. (default: .image-container)<br/>
+              <p><strong>selector:</strong> <em>string</em> - set the selector (class) of your image container. (default: .image-container)<br/>
                 <strong>centered:</strong> <em>bool</em> - set if images will be centered in their containers or not. (default: true)
               </p>
               <pre><code class="javascript">
                 $('.picture-perfect').picturePerfect({
-                  container: '.image-container',
+                  selector: '.image-container',
                   centered: true
                 });
               </code></pre>
